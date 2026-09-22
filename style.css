@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #faf7f0;
+  color: #283d35;
+  line-height: 1.7;
+}
+
+/* Header and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 6%;
+  border-bottom: 1px solid #dfdfd3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo i {
+  margin-right: 8px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/* Hero section */
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #78613e;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 54px;
+  margin: 22px 0;
+}
+
+.hero p {
+  max-width: 530px;
+  margin: 0 auto 28px;
+  color: #58665e;
+}
+
+/* Call-to-action buttons */
+.button {
+  display: inline-block;
+  background-color: #294f40;
+  color: white;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #19382b;
+}
+
+.button i {
+  margin-left: 8px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #98743d;
+  outline-offset: 5px;
+}
+
+/* Book categories */
+#categories {
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: #58665e;
+  margin-bottom: 28px;
+}
+
+.book-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #e2e3d8;
+  border-radius: 12px;
+}
+
+.card > i {
+  display: inline-block;
+  font-size: 30px;
+  color: #78613e;
+  background-color: #f5efdf;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #58665e;
+}
+
+.card span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #78613e;
+}
+
+/* Reading club */
+.club {
+  padding: 45px 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  background-color: #e9eee5;
+  border-radius: 12px;
+}
+
+.club > i {
+  font-size: 38px;
+}
+
+.club p {
+  max-width: 550px;
+  margin: 0 auto 25px;
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #283d35;
+  color: white;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer small {
+  display: block;
+  margin-top: 15px;
+  color: #d3ddd5;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 55px 0;
+  }
+
+  .book-cards {
+    flex-direction: column;
+  }
+
+  .club {
+    padding: 30px 20px;
+  }
+}
