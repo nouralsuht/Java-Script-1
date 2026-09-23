@@ -22,7 +22,7 @@ console.log(typeof (Infinity));//number
 console.log(1 == '1');//true
 console.log(1 === '1');//false
 
-// Ex2
+Ex2
 alert("welcome " + prompt("enter you name :"));
 //Ex3 
 let first = Number(prompt("Enter the first number:"));
@@ -102,7 +102,7 @@ if (age > 60) {
 } else {
     alert("You may join the kids' program.");
 }
-//Ex8 
+Ex8 
  
 function switchCase(text) {
     let result = "";
@@ -118,7 +118,7 @@ function switchCase(text) {
 }
 console.log(switchCase("OrAnGe"));
 
-//Ex9
+Ex9
 function camelCase(text) {
     let words = text.split(" ");
     let result = "";
@@ -131,3 +131,5 @@ function camelCase(text) {
 }
 
 console.log(camelCase("Coding Academy by Orange"));
+
+ 
