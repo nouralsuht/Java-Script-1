@@ -1,33 +1,113 @@
-function joinClub() {
-  // Ask for the user's name.
-  let userName = prompt("Enter your name:");
+// EX2
 
-  // Ask for the membership type.
-  let membership = prompt(
-    "Enter your membership type: student or regular"
-  );
+ function getMembershipType() {
 
-  // Display the appropriate welcome message.
-  if (membership === "student") {
-    alert("Welcome Scholar " + userName);
-  } else if (membership === "regular") {
-    alert("Welcome Member " + userName);
-  } else {
-    alert("Welcome " + userName);
-  }
+    let membership = prompt(
+        "Enter your membership type: student or regular"
+    );
 
-  // Ask for the preferred genre.
-  let genre = prompt("Do you prefer fiction or non-fiction?");
+    while (membership !== "student" && membership !== "regular") {
 
-  // Ask for the book title.
-  let bookTitle = prompt(
-    "Enter the title of the book you want to borrow:"
-  );
+        alert("Invalid membership type");
 
-  // Display a reservation message.
-  alert('Your requested book "' + bookTitle + '" is being reserved.');
+        membership = prompt(
+            "Enter your membership type: student or regular"
+        );
+    }
 
-  // Print the details in the browser console.
-  console.log(userName + " requested the book: " + bookTitle);
-  console.log("Preferred genre: " + genre);
+    return membership;
 }
+
+
+ function collectUserData() {
+
+    let userName = prompt("Enter your name:");
+
+    let membership = getMembershipType();
+
+    let genre = prompt(
+        "Do you prefer fiction or non-fiction?"
+    );
+
+    let bookTitle = prompt(
+        "Enter the title of the book you want to borrow:"
+    );
+
+    let userData = [
+        userName,
+        membership,
+        genre,
+        bookTitle
+    ];
+
+    return userData;
+}
+
+
+// EX3
+
+ let availableGenres = [
+    "Fiction",
+    "Science",
+    "History",
+    "Biography"
+];
+
+
+ function applyDiscount(userData) {
+
+    if (userData[1] === "student") {
+        userData.push("20% Discount");
+    } 
+    else if (userData[1] === "regular") {
+        userData.push("No Discount");
+    }
+
+    return userData;
+}
+
+
+ function addNewGenre(genre) {
+    availableGenres.push(genre);
+}
+
+
+ function displayGenres() {
+
+    for (let i = 0; i < availableGenres.length; i++) {
+        console.log("- We offer: " + availableGenres[i]);
+    }
+}
+
+
+ function joinClub() {
+
+     let userData = collectUserData();
+
+     userData = applyDiscount(userData);
+
+     if (userData[1] === "student") {
+        alert("Welcome Scholar " + userData[0]);
+    } 
+    else {
+        alert("Welcome Member " + userData[0]);
+    }
+
+     alert(
+        'Your requested book "' +
+        userData[3] +
+        '" is being reserved.'
+    );
+
+     console.log("User Data:");
+
+    for (let i = 0; i < userData.length; i++) {
+        console.log(userData[i]);
+    }
+
+     console.log("Available Genres:");
+
+    displayGenres();
+}
+
+ 
