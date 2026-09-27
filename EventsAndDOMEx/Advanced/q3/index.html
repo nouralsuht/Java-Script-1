@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Interactive Text Editor</h2>
+
+        <div id="displayText">HELLO</div>
+
+        <div class="controls">
+
+            <div class="buttons-row">
+                <button id="boldBtn">Bold</button>
+                <button id="italicBtn">Italic</button>
+
+                <button id="leftBtn">Left</button>
+                <button id="centerBtn">Center</button>
+                <button id="rightBtn">Right</button>
+            </div>
+
+            <div class="buttons-row">
+                <button id="upperBtn">Upper Case</button>
+                <button id="lowerBtn">Lower Case</button>
+                <button id="capitalizeBtn">Capitalize</button>
+                <button id="clearBtn">Clear Text</button>
+            </div>
+
+            <div class="options-row">
+                <label for="textColor">Text Color:</label>
+                <input type="color" id="textColor" value="#8b0000">
+
+                <label for="backgroundColor">Background:</label>
+                <input type="color" id="backgroundColor" value="#00ffff">
+            </div>
+
+            <div class="options-row">
+                <label for="fontSize">Font Size:</label>
+                <input type="number" id="fontSize" value="47" min="1">
+
+                <label for="fontFamily">Font:</label>
+                <select id="fontFamily">
+                    <option value="Georgia" selected>Georgia</option>
+                    <option value="Arial">Arial</option>
+                    <option value="'Times New Roman'">Times New Roman</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
