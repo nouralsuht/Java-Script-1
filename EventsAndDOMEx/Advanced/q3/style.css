@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 520px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#displayText {
+    width: 100%;
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333;
+    border-radius: 4px;
+
+    background-color: cyan;
+    color: darkred;
+
+    font-size: 47px;
+    font-family: Georgia, serif;
+
+    text-align: center;
+
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #4b468e;
+    color: white;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.options-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.options-row label {
+    font-size: 14px;
+}
+
+#textColor,
+#backgroundColor {
+    width: 45px;
+    height: 28px;
+    border: none;
+    padding: 0;
+}
+
+#fontSize {
+    width: 65px;
+    padding: 5px;
+}
+
+#fontFamily {
+    width: 150px;
+    padding: 5px;
+}

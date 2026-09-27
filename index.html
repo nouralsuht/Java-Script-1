@@ -1,99 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookstore & Reading Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-  >
-  <link rel="stylesheet" href="style.css">
+    <title>Bookstore & Reading Club</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <a class="logo" href="#">
-      <i class="bi bi-book" aria-hidden="true"></i>
-      Bookstore
-    </a>
 
-    <nav aria-label="Main navigation">
-      <a href="#categories">Our Books</a>
-      <a href="#club">Reading Club</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header>
 
-  <main>
-    <section class="hero">
-      <span class="label">A PLACE FOR BOOK LOVERS</span>
+        <a class="logo" href="#">
+            <i class="bi bi-book"></i>
+            Bookstore
+        </a>
 
-      <h1>Your next adventure<br>starts with a book.</h1>
+        <nav>
+            <a href="#categories">Our Books</a>
+            <a href="#club">Reading Club</a>
+            <a href="#join">Join Now</a>
+        </nav>
 
-      <p>
-        Discover new stories, join our reading community,
-        and reserve your next favorite book.
-      </p>
+    </header>
 
-      <button class="button" type="button" onclick="joinClub()">
-        Reserve Your Book
-        <i class="bi bi-arrow-right" aria-hidden="true"></i>
-      </button>
-    </section>
 
-    <section id="categories">
-      <h2>Find your next read</h2>
-      <p class="section-description">
-        Imaginary worlds or real-life discoveries — what will you choose?
-      </p>
+    <main>
 
-      <div class="book-cards">
-        <article class="card">
-          <i class="bi bi-stars" aria-hidden="true"></i>
-          <h3>Fiction</h3>
-          <p>
-            Get lost in adventures, mysteries,
-            and stories that stay with you.
-          </p>
-          <span>Imagine something new</span>
-        </article>
+        <!-- Hero -->
+        <section class="hero">
 
-        <article class="card">
-          <i class="bi bi-globe" aria-hidden="true"></i>
-          <h3>Non-fiction</h3>
-          <p>
-            Discover real stories and explore science,
-            history, and the world around you.
-          </p>
-          <span>Learn something new</span>
-        </article>
-      </div>
-    </section>
+            <span class="label">
+                A PLACE FOR BOOK LOVERS
+            </span>
 
-    <section class="club" id="club">
-      <i class="bi bi-people" aria-hidden="true"></i>
-      <h2>Good books. Great company.</h2>
-      <p>
-        Student or regular member, there is a place for you here.
-        Join our club and choose your next book.
-      </p>
+            <h1>
+                Your next adventure
+                <br>
+                starts with a book.
+            </h1>
 
-      <button class="button" type="button" onclick="joinClub()">
-        Join the Reading Club
-        <i class="bi bi-arrow-right" aria-hidden="true"></i>
-      </button>
-    </section>
-  </main>
+            <p>
+                Discover new stories, join our reading community,
+                and reserve your next favorite book.
+            </p>
 
-  <footer>
-    <p>
-      <i class="bi bi-book" aria-hidden="true"></i>
-      Bookstore & Reading Club
-    </p>
-    <p>Every book is a new adventure.</p>
-    <small>Made by Nour</small>
-  </footer>
+            <button class="button join-button" type="button">
+                Reserve Your Book
+                <i class="bi bi-arrow-right"></i>
+            </button>
 
-  <script src="app.js"></script>
+        </section>
+
+
+        <!-- Categories -->
+        <section id="categories">
+
+            <h2>Find your next read</h2>
+
+            <p class="section-description">
+                Imaginary worlds or real-life discoveries —
+                what will you choose?
+            </p>
+
+
+            <div class="book-cards">
+
+                <article class="card">
+
+                    <i class="bi bi-stars"></i>
+
+                    <h3>Fiction</h3>
+
+                    <p>
+                        Get lost in adventures, mysteries,
+                        and stories that stay with you.
+                    </p>
+
+                    <span>Imagine something new</span>
+
+                </article>
+
+
+                <article class="card">
+
+                    <i class="bi bi-globe"></i>
+
+                    <h3>Non-fiction</h3>
+
+                    <p>
+                        Discover real stories and explore science,
+                        history, and the world around you.
+                    </p>
+
+                    <span>Learn something new</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reading Club -->
+        <section class="club" id="club">
+
+            <i class="bi bi-people"></i>
+
+            <h2>Good books. Great company.</h2>
+
+            <p>
+                Student or regular member, there is a place for you here.
+                Join our club and choose your next book.
+            </p>
+
+            <button class="button join-button" type="button">
+                Join the Reading Club
+
+                <i class="bi bi-arrow-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Join Form -->
+        <section class="join-section" id="join">
+
+            <div class="form-heading">
+
+                <span class="label">
+                    READING CLUB
+                </span>
+
+                <h2>Reserve your next book</h2>
+
+                <p>
+                    Fill in your details and join our reading community.
+                </p>
+
+            </div>
+
+
+            <div class="form-layout">
+
+                <!-- Form -->
+                <form id="club-form">
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            <i class="bi bi-person"></i>
+                            Username
+                        </label>
+
+                        <input
+                            id="username"
+                            type="text"
+                            placeholder="Enter your name"
+                        >
+
+                        <span class="error" id="username-error"></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="membership">
+                            <i class="bi bi-person-badge"></i>
+                            Membership Type
+                        </label>
+
+                        <select id="membership">
+
+                            <option value="">
+                                Select membership
+                            </option>
+
+                            <option value="student">
+                                Student
+                            </option>
+
+                            <option value="regular">
+                                Regular
+                            </option>
+
+                        </select>
+
+                        <span class="error" id="membership-error"></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="genre">
+                            <i class="bi bi-bookmark"></i>
+                            Book Genre
+                        </label>
+
+                        <select id="genre">
+
+                            <option value="">
+                                Select genre
+                            </option>
+
+                            <option value="Fiction">
+                                Fiction
+                            </option>
+
+                            <option value="Science">
+                                Science
+                            </option>
+
+                            <option value="History">
+                                History
+                            </option>
+
+                            <option value="Biography">
+                                Biography
+                            </option>
+
+                            <option value="Non-fiction">
+                                Non-fiction
+                            </option>
+
+                        </select>
+
+                        <span class="error" id="genre-error"></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookTitle">
+                            <i class="bi bi-journal-bookmark"></i>
+                            Book Title
+                        </label>
+
+                        <input
+                            id="bookTitle"
+                            type="text"
+                            placeholder="Enter book title"
+                        >
+
+                        <span class="error" id="book-error"></span>
+
+                    </div>
+
+
+                    <button
+                        class="button submit-button"
+                        type="submit"
+                    >
+                        <i class="bi bi-book"></i>
+                        Reserve Book
+                    </button>
+
+                </form>
+
+
+                <!-- Result -->
+                <div id="result-card">
+
+                    <div class="empty-result">
+
+                        <i class="bi bi-journal-text"></i>
+
+                        <h3>Your reservation</h3>
+
+                        <p>
+                            Your details will appear here
+                            after submitting the form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            <i class="bi bi-book"></i>
+            Bookstore & Reading Club
+        </p>
+
+        <p>
+            Every book is a new adventure.
+        </p>
+
+        <small>
+            Made by Nour
+        </small>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
